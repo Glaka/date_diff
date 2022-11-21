@@ -37,6 +37,7 @@ function App() {
                 <InputDate value={startDate} onChange={setStartDate} />
                 <p>end date:</p>
                 <InputDate value={finalDate} onChange={setFinalDate} />
+                <p></p>
                 <button onClick={handleCalcDif}>Calculate</button>
                 {startDays && finalDays ? (
                     <p>Date difference: {daysDifCorrect} days</p>
@@ -44,6 +45,8 @@ function App() {
                 {startDaysTest && finalDaysTest ? (
                     <p>Date difference (test): {daysDifTestCorrect} days</p>
                 ) : null}
+                <p>as example enter date in format:</p>
+                <p>10/10/2022</p>
             </header>
         </div>
     );
